@@ -5,6 +5,7 @@
 #include "TextureManager.h"
 #include "GameObject.h"
 #include "Player.h"
+#include <vector>
 
 class Game {  
 public:
@@ -22,11 +23,8 @@ private:
   SDL_Window* m_pWindow;
   SDL_Renderer* m_pRenderer;
 
-  GameObject
-m_go;
-Player
-m_player;
-
+  std::vector<GameObject*> m_gameObjects;
+  
   int m_currentFrame;
 
   bool m_bRunning;
