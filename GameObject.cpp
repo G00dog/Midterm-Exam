@@ -1,8 +1,7 @@
 #include "GameObject.h"
 #include "TextureManager.h"
 
-void
-GameObject::load(int x,int y, int width, int height, std::string textureID)
+void GameObject::load(int x,int y, int width, int height, std::string textureID)
 
 {
 m_x=x;
@@ -30,8 +29,7 @@ pRenderer);
 
 }
 
-void
-GameObject::update()
+void GameObject::update()
 {
 m_x += 1;
   m_currentFrame = ((SDL_GetTicks()/100)%6);
