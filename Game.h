@@ -6,6 +6,9 @@
 #include "GameObject.h"
 #include "Player.h"
 #include <vector>
+#include "SDLGameObject.h"
+#include "Enemy.h"
+#include "LoaderParams.h"
 
 class Game {  
 public:
